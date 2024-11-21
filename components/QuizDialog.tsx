@@ -40,7 +40,7 @@ export default function QuizDialog({
   useEffect(() => {
     if (open) {
       const shuffled = [...cards].sort(() => Math.random() - 0.5);
-      setQuizCards(shuffled.slice(0, Math.min(5, cards.length)));
+      setQuizCards(shuffled.slice(0, 5));
       setCurrentIndex(0);
       setScore(0);
       setAnswer("");
