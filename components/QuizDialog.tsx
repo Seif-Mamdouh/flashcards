@@ -53,7 +53,7 @@ export default function QuizDialog({
     if (!showAnswer) {
       setShowAnswer(true);
       if (
-        answer.toLowerCase().trim() === quizCards[currentIndex].answer.toLowerCase().trim()
+        answer === quizCards[currentIndex].answer
       ) {
         setScore(score + 1);
       }
