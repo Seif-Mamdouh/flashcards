@@ -72,6 +72,7 @@ export default function Home() {
             onClick={() => setIsQuizDialogOpen(true)}
             variant="secondary"
             className="gap-2"
+            // disabled={cards.length === 0}
           >
             <Brain className="w-4 h-4" />
             Start Quiz
